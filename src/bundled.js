@@ -423,7 +423,8 @@ export function populate (target, options) {
         : hook.app.service(options.service).get(id, params);
       return promise.then(relatedItem => {
         if (relatedItem) {
-          item[target] = relatedItem;
+          //item[target] = relatedItem;
+          setByDot(item, target, relatedItem, false);
         }
         return item;
       });
