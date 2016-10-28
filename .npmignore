@@ -2,7 +2,7 @@
 # npm modules
 node_modules/
 # ES6 source
-src/
+#src/
 # coverage report
 coverage/
 # checklists and standard files
@@ -14,4 +14,4 @@ docs-secure/
 .istanbul.yml
 .babelrc
 test/
-!lib/
+#!lib/
