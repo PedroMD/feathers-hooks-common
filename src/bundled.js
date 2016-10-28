@@ -403,7 +403,8 @@ export function populate (target, options) {
       }
 
       // Find by the field value by default or a custom query
-      const id = item[field];
+      // const id = item[field];
+      const id = getByDot(item, field);
 
       // If it's a mongoose model then
       if (typeof item.toObject === 'function') {
